@@ -1,7 +1,7 @@
-var hour = 0;
-var minute = 0;
-var second = 0;
-var d = new Date();
+let hour = 0;
+let minute = 0;
+let second = 0;
+let d = new Date();
 
 setInterval( function(){
     d = new Date();
@@ -20,8 +20,8 @@ setInterval( function(){
 
 function updateDateTime() {
 
-    var now = new Date();
-    var timeOption = {
+    let now = new Date();
+    let timeOption = {
 
         hour: 'numeric', 
         minute: 'numeric', 
@@ -31,15 +31,15 @@ function updateDateTime() {
          
     };
 
-    var dateOption = {
+    let dateOption = {
         
         year: 'numeric', 
         month: 'long', 
         day: 'numeric',
     };
 
-    var timeString = d.toLocaleString('en-IN', timeOption).toUpperCase();
-    var dateString = d.toLocaleString('en-IN', dateOption).toUpperCase();
+    let timeString = d.toLocaleString('en-IN', timeOption).toUpperCase();
+    let dateString = d.toLocaleString('en-IN', dateOption).toUpperCase();
 
   
     
