@@ -15,3 +15,39 @@ setInterval( function(){
 },1000
 
 )
+
+
+
+function updateDateTime() {
+
+    var now = new Date();
+    var timeOption = {
+
+        hour: 'numeric', 
+        minute: 'numeric', 
+        second: 'numeric', 
+        weekday: 'long',                                        
+        hour12: true
+         
+    };
+
+    var dateOption = {
+        
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric',
+    };
+
+    var timeString = d.toLocaleString('en-IN', timeOption).toUpperCase();
+    var dateString = d.toLocaleString('en-IN', dateOption).toUpperCase();
+
+  
+    
+    document.getElementById('time').innerHTML = timeString ;
+    document.getElementById('date').innerHTML = dateString + "." ;
+   
+}
+
+
+updateDateTime();
+setInterval(updateDateTime, 1000);
