@@ -44,7 +44,7 @@ function updateDateTime() {
   
     
     document.getElementById('time').innerHTML = timeString ;
-    document.getElementById('date').innerHTML = dateString + "." ;
+    document.getElementById('date').innerHTML = dateString ;
    
 }
 
